@@ -117,14 +117,44 @@ switch(day){
 // TODO: Sum integers 1..10 with a for loop; display the result of total sum.
 // write code here
 
+let s = 0;
+for (let i = 1; i <= 10; i++)
+     {
+        s += i;
+}
+console.log("Sum :", s);
+
+
 
 // Task 5.2 — while loop
 // let t = 3; while(t > 0), decrement the value t variable in each iteration and display the result.
 // write code here
 
+let t = 3;
+while (t > 0) {
+  
+    console.log(t);
+  
+    t--;
+
+}
+
+
 
 // Read Chapter 4 in zyBooks: Do-While Loop
 // write code here
+
+let t = 3;
+
+do 
+{
+  console.log(t);
+
+  t--;
+
+
+} while (t > 0);
+
 
 
 // =============================
@@ -136,9 +166,28 @@ switch(day){
 // write code here
 
 
+function add(a, b) {
+  
+    return a + b;
+}
+
+console.log(add(2, 5));
+
+
+
+
 // Task 6.2 — Arrow functions
 // Make an arrow function; const cube = n => n*n*n; cube(3)
 // write code here
+
+const cube = n => n * n * n;
+
+
+
+console.log(cube(3));
+
+
+
 
 
 // =================================
@@ -149,6 +198,17 @@ switch(day){
 // Declare var a = 1; let b = 2 inside a block { },  then try displaying both outside the block; observe differences.
 // write code here
 
+if(true) {
+  var a = 1;  
+
+  let b = 2;   
+}
+
+console.log(a); 
+
+//console.log(b); 
+
+
 
 // ==================
 // TODO-8: ARRAYS (CORE)
@@ -157,6 +217,21 @@ switch(day){
 // Task 8.1 — create & mutate
 // TODO: let nums = [3,1,4]; then push(1), unshift(9), pop(); log final array and length.
 // write code here
+
+let nums = [3, 1, 4];
+
+
+nums.push(1);  
+
+nums.unshift(9); 
+
+nums.pop();    
+
+
+console.log(nums);   
+     
+console.log(nums.length); 
+
 
 
 // End of manual — great job! Keep this file open and work task by task.
